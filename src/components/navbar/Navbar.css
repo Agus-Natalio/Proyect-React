@@ -1,0 +1,69 @@
+.navbar {
+    background-color: #353535;
+    padding: .10rem;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    color: rgb(255, 99, 43);
+    font-weight: 500;
+    margin-bottom: .25rem;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: rgb(255, 99, 43);
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar-nav:hover .nav-link:hover {
+    color: rgb(255, 99, 43)!important;
+}
+
+.navbar-nav:active .nav-link::after {
+    color: rgb(255, 99, 43)!important;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.navbar-links {
+    gap: 1rem;
+}
+
+.dropdown-menu {
+    border-color: rgb(255, 99, 43);
+}
+
+.dropdown-divider {
+    border-color: rgb(255, 99, 43);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(255, 99, 43);
+    color: #fff;
+    transition: .25s;
+    border-radius: 15%;
+}
+
+.searchBtn {
+    border-color: rgb(255, 99, 43);
+    color: rgb(255, 99, 43);
+}
+
+.searchBtn:hover {
+    background-color: rgb(255, 99, 43);
+    border-color: rgb(255, 99, 43);
+    color: #fff;
+}
+
+.searchBtn:active{
+    background-color: rgb(255, 99, 43)!important;
+    border-color: rgb(255, 99, 43)!important;
+    box-shadow: 4px rgb(255, 99, 43), 4px rgb(255, 99, 43);
+}
