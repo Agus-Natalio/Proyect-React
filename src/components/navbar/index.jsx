@@ -11,7 +11,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarScroll() {
   return (
-    <Navbar className="navbar justify-content-center" expand="lg">
+    <Navbar className="navbar" expand="lg">
       <Container className="mx-5 d-flex justify-content-center" fluid>
         <a href="#"><img className="logo" src={logo} alt="logo" /></a>
         <Navbar.Brand href="#">KaiHammer</Navbar.Brand>

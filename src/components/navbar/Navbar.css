@@ -4,10 +4,10 @@
 }
 
 .navbar-brand {
-    font-size: 1.75rem;
-    color: rgb(255, 99, 43);
+    font-size: 2rem;
+    color: #fff;
     font-weight: 500;
-    margin-bottom: .25rem;
+    margin-bottom: .5rem;
     letter-spacing: 1px;
 }
 
@@ -18,6 +18,7 @@
 .navbar-nav .nav-link {
   color: #fff !important;
   font-weight: 500;
+  font-size: 1.10rem;
 }
 
 .navbar-nav:hover .nav-link:hover {
@@ -29,7 +30,7 @@
 }
 
 .logo {
-    width: 5rem;
+    width: 6rem;
 }
 
 .navbar-links {
