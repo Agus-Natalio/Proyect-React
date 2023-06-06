@@ -1,0 +1,30 @@
+.itemCounter__addItemBtn {
+  border-radius: 1000%;
+  background-color: #353535;
+  border: none;
+  font-weight: bold;
+  color: rgb(255, 99, 43);
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
+.itemCounter__addItemBtn:disabled {
+  background-color: #999999;
+  color: rgb(255, 185, 159);
+  transition: .25s;
+}
+
+
+.itemCounter {
+  border: solid rgb(255, 99, 43);
+  color: #353535;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: #ececec;
+  padding: .25rem .5rem;
+  border-radius: 2rem;
+}
+
+p {
+  font-weight: bold;
+}
