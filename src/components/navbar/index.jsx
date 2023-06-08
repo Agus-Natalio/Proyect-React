@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/KaiHammer.png'
+import logo from '../../assets/images/KaiHammer.png'
 import CartBadge from '../cartBtn/CartWidget';
 import './Navbar.css'
 import Button from 'react-bootstrap/Button';

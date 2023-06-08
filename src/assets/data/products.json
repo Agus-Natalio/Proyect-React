@@ -1,0 +1,34 @@
+[
+    {
+       "id": 1, 
+       "title":"Set 'Tejedestinos'",
+       "price":4899.9,
+       "type": "Dados",
+       "stock": "17",
+       "image":"Tejedestinos.jpg"
+    },
+    {
+       "id": 2, 
+       "title":"Set 'Alto Saqueras'",
+       "price":4799.9,
+       "type":"Dados",
+       "stock": "8",
+       "image":"altoSaqueras.jpg"
+    },
+    {
+      "id": 3,
+      "title":"Set 'Niimatra'",
+      "price": 4999.9,
+      "type": "Dados",
+      "stock": "13",
+      "image":"Niimatra.jpg"
+    },
+    {
+      "id": 4,
+      "title":"Set 'Luna Sangrienta'",
+      "price":4799.9,
+      "type": "Dados",
+      "stock": "11",
+      "image":"lunaSangrienta.jpg"
+    }
+]

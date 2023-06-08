@@ -1,0 +1,37 @@
+.itemCard {
+    background-color: #474747;
+    color: #f1f1f1;
+}
+
+.itemType {
+    background-color: #f1f1f1;
+    color: rgb(255, 99, 43);
+    border-radius: .5rem;
+    padding: .10rem 0;
+}
+
+.itemImg {
+    height: 16rem;
+}
+
+.itemTitle {
+    padding: .5rem 0 .25rem 0;
+}
+
+.itemBtn {
+    background-color: #f1f1f1;
+    border-color: rgb(255, 99, 43);
+    color: rgb(255, 99, 43);
+}
+
+.itemBtn:hover, .itemBtn:active {
+    background-color: rgb(255, 99, 43)!important;
+    color: #f1f1f1!important;
+    border-color: rgb(255, 99, 43)!important;
+}
+
+.itemFooter {
+    background-color: #f1f1f1;
+    color: rgb(255, 99, 43);
+    font-weight: bold;
+}

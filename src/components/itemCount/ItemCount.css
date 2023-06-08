@@ -1,6 +1,6 @@
 .itemCounter__addItemBtn {
   border-radius: 1000%;
-  background-color: #353535;
+  background-color: #f1f1f1;
   border: none;
   font-weight: bold;
   color: rgb(255, 99, 43);
@@ -16,11 +16,10 @@
 
 
 .itemCounter {
-  border: solid rgb(255, 99, 43);
-  color: #353535;
+  margin-top: .5rem;
+  color: #f1f1f1;
   font-weight: bold;
   font-size: 1.5rem;
-  background-color: #ececec;
   padding: .25rem .5rem;
   border-radius: 2rem;
 }

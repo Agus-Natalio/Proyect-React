@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/navbar';
-import ItemCount from './components/itemCount';
+import ItemListContainer from './components/itemListContainer';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Navbar/>
       </header>
       <body className="backgroundImg">
-        <ItemCount/>
+        <ItemListContainer/>
       </body>
     </div>
   );
