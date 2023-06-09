@@ -4,6 +4,7 @@ import products from '../../assets/data/products.json';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Spinner from 'react-bootstrap/Spinner';
 
 const ItemList = () => {
   const [loading, setLoading] = useState(true);
@@ -15,7 +16,7 @@ const ItemList = () => {
       return new Promise((resolve) => {
         setTimeout(() => {
           resolve(products);
-        }, 2000);
+        }, 2500);
       });
     };
 
@@ -33,7 +34,7 @@ const ItemList = () => {
   return (
     <Container>
       {loading ? (
-        <p>Cargando...</p>
+        <Spinner animation="grow" variant="light" />
       ) : (
         <>
           <Row>

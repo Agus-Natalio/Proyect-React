@@ -1,22 +1,22 @@
 .itemCounter__addItemBtn {
   border-radius: 1000%;
-  background-color: #f1f1f1;
+  background-color: rgb(255, 99, 43);
   border: none;
   font-weight: bold;
-  color: rgb(255, 99, 43);
+  color: #f1f1f1;
   height: 2.75rem;
   width: 2.75rem;
 }
 
 .itemCounter__addItemBtn:disabled {
-  background-color: #999999;
-  color: rgb(255, 185, 159);
+  background-color: rgb(255, 185, 159);
+  color: #999999;
   transition: .25s;
 }
 
 
 .itemCounter {
-  margin-top: .5rem;
+  margin-bottom: .5rem;
   color: #f1f1f1;
   font-weight: bold;
   font-size: 1.5rem;

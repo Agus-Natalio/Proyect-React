@@ -1,0 +1,8 @@
+.mainHero {
+    background-image: url(../../assets/images/heroBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}

@@ -16,10 +16,13 @@ const Item = ({ product }) => {
           <Card.Text className="itemType">{product.type}</Card.Text>
           <Card.Img className="itemImg" variant="top" src={image} alt={product.title} />
           <Card.Title className="itemTitle">{product.title}</Card.Title>
+          <ItemCount stock={product.stock}/>
           <Button className="itemBtn" variant="primary">
             Ver detalle
           </Button>
-          <ItemCount stock={product.stock}/>
+          <Button className="itemBtn purchaseBtn" variant="primary">
+            Purchase
+          </Button>
         </Card.Body>
         <ListGroup className="list-group-flush">
           <ListGroup.Item className="itemFooter">
