@@ -6,3 +6,25 @@
     align-items: center;
     justify-content: center;
 }
+
+.hero-content {
+    margin: 0 25rem;
+    padding: 1.5rem 10rem;
+    background-color: rgba(26, 26, 26, 0.8);
+    color: gold;
+}
+
+.hero-content p {
+    font-size: 1.10rem;
+    padding: 3rem 0;
+}
+
+.heroImg {
+    width: 10rem;
+    border: solid rgb(255, 211, 100);
+    background-color: #161616;
+}
+
+.midImg {
+    margin-top: 1.25rem;
+}

@@ -9,12 +9,4 @@
 
 .backgroundImg {
   background-color: #11053b!important;
-  /*background-image: url(./assets/images/homeBg.jpg);
-  background-size: cover;
-  background-position: center;*/
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
 }

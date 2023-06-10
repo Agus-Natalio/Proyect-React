@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Spinner from 'react-bootstrap/Spinner';
+import './itemList.css';
 
 const ItemList = () => {
   const [loading, setLoading] = useState(true);
@@ -34,7 +35,9 @@ const ItemList = () => {
   return (
     <Container>
       {loading ? (
-        <Spinner animation="grow" variant="light" />
+        <div className="loadSpin">
+          <Spinner animation="grow" variant="light" />
+        </div>
       ) : (
         <>
           <Row>

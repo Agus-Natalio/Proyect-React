@@ -11,7 +11,7 @@ function App() {
         <Navbar/>
       </header>
       <body className="backgroundImg">
-        <Hero title="Hero" subtitle="Explora nuestras increibles ofertas" image="./assets/images/heroBG.jpg"/>
+        <Hero title="¡Novedades en el escenario galactico!" image="./assets/images/heroBG.jpg"/>
         <ItemListContainer/>
       </body>
     </div>
