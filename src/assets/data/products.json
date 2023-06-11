@@ -30,5 +30,13 @@
       "type": "Dados",
       "stock": "11",
       "image":"lunaSangrienta.jpg"
+    },
+    {
+      "id": 5,
+      "title":"Set 'Star Wars'",
+      "price":4799.9,
+      "type": "Dados",
+      "stock": "30",
+      "image":"swDices.jpg"
     }
 ]
