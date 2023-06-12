@@ -12,7 +12,7 @@ const ItemList = () => {
   const [productList, setProductList] = useState([]);
 
   useEffect(() => {
-    // Simulación de una promesa con un tiempo de espera de 2 segundos
+    // Simulación de una promesa con un tiempo de espera de 2.5 segundos
     const fetchData = () => {
       return new Promise((resolve) => {
         setTimeout(() => {

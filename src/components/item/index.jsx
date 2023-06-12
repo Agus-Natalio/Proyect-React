@@ -3,10 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ItemCount from '../itemCount';
+import ItemDetail from '../itemDetail';
 import './Item.css';
 
 const Item = ({ product }) => {
-  // Importa la imagen dinámicamente utilizando require
   const image = require(`../../assets/images/${product.image}`);
 
   return (
@@ -17,9 +17,7 @@ const Item = ({ product }) => {
           <Card.Img className="itemImg" variant="top" src={image} alt={product.title} />
           <Card.Title className="itemTitle">{product.title}</Card.Title>
           <ItemCount stock={product.stock}/>
-          <Button className="itemBtn" variant="primary">
-            Ver detalle
-          </Button>
+          <ItemDetail product = {product}/>
           <Button className="itemBtn purchaseBtn" variant="primary">
             Purchase
           </Button>
@@ -34,4 +32,4 @@ const Item = ({ product }) => {
   );
 };
 
-export default Item;
+export default Item; 

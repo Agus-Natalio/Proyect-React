@@ -4,6 +4,7 @@
        "title":"Set 'Tejedestinos'",
        "price":4899.9,
        "type": "Dados",
+       "desc": "Aca va la descripcao",
        "stock": "17",
        "image":"Tejedestinos.jpg"
     },
@@ -12,6 +13,7 @@
        "title":"Set 'Alto Saqueras'",
        "price":4799.9,
        "type":"Dados",
+       "desc": "Este set de dados es un set de dados ambientado en dados hechos de dados de saquerita",
        "stock": "8",
        "image":"altoSaqueras.jpg"
     },
@@ -20,6 +22,7 @@
       "title":"Set 'Niimatra'",
       "price": 4999.9,
       "type": "Dados",
+      "desc": "Aca va la descripcao",
       "stock": "13",
       "image":"Niimatra.jpg"
     },
@@ -28,6 +31,7 @@
       "title":"Set 'Luna Sangrienta'",
       "price":4799.9,
       "type": "Dados",
+      "desc": "Aca va la descripcao",
       "stock": "11",
       "image":"lunaSangrienta.jpg"
     },
@@ -36,6 +40,7 @@
       "title":"Set 'Star Wars'",
       "price":4799.9,
       "type": "Dados",
+      "desc": "Aca va la descripcao",
       "stock": "30",
       "image":"swDices.jpg"
     }

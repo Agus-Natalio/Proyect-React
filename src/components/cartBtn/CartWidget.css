@@ -35,6 +35,14 @@
 }
 
 .btn-close {
-    background-color: rgb(255, 99, 43)!important;
+    opacity: 1;
+    background-color: rgb(255, 99, 43);
+    color: #f1f1f1;
+    transition: .25s;
+}
+
+.btn-close:hover {
+    background-color: rgb(206, 55, 0)!important;
+    opacity: 1;
     transition: .25s;
 }

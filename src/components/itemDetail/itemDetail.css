@@ -1,0 +1,53 @@
+p {
+    font-weight: normal;
+}
+
+hr {
+    color: rgb(255, 99, 43);
+}
+
+.modalHeader, .modalFooter {
+    background-color: #f1f1f1;
+}
+
+.modalBody {
+    background-color: #11053b;
+    color: rgb(255, 99, 43);
+}
+
+.modalStock {
+    font-size: .75rem;
+}
+
+.modalBtn {
+    background-color: #f1f1f1;
+    color: rgb(255, 99, 43);
+    border-color: rgb(255, 99, 43);
+}
+
+.modalBtn:hover {
+    background-color: rgb(255, 99, 43);
+    border-color: rgb(255, 99, 43);
+    color: #f1f1f1;
+}
+
+.modalBtn:active {
+    background-color: rgb(206, 55, 0)!important;
+    border-color: rgb(206, 55, 0)!important;
+}
+
+.btn-close {
+    opacity: 1;
+    color: #f1f1f1;
+}
+
+.btn-close:hover {
+    background-color: rgb(206, 55, 0)!important;
+    opacity: 1;
+}
+
+.modalImg {
+    height: 16rem;
+    width: 14rem;
+    border-radius: 1rem;
+}

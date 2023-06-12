@@ -7,6 +7,23 @@
   color: #61dafb;
 }
 
-.backgroundImg {
-  background-color: #11053b!important;
+body {
+  background-image: url(../src/assets/images/sideBg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  margin: 0!important;
+  color: gold!important;
+  border: solid rgb(255, 200, 62)!important;
+  opacity: 1!important;
+}
+
+.bgContainer {
+  margin: 0 15rem;
+  background-color: #0e0822!important;
 }

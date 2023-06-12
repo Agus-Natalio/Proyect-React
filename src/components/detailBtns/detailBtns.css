@@ -1,0 +1,16 @@
+.btnContainer {
+    margin-right: 3.5rem;
+    padding: 0!important;
+}
+
+.purchaseDetailBtn {
+    background-color: rgb(26, 153, 15);
+    border-color: rgb(26, 153, 15);
+    margin: 0 0 .75rem 0;
+}
+
+.purchaseDetailBtn:hover {
+    background-color: rgb(34, 202, 19);
+    border-color: rgb(34, 202, 19);
+    box-shadow: 0 0 10px rgb(34, 202, 19), 0 0 15px rgb(34, 202, 19), 0 0 30px #fff;
+}
