@@ -16,9 +16,9 @@
 }
 
 .navbar-nav .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-  font-size: 1.10rem;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1.10rem;
 }
 
 .navbar-nav:hover .nav-link:hover {
@@ -45,11 +45,16 @@
     border-color:rgb(255, 99, 43);
 }
 
+.dropdown-item a{
+    color: #222222;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .dropdown-item:hover {
-    background-color: rgb(255, 99, 43);
-    color: #fff;
     transition: .25s;
-    border-radius: 15%;
+    background-color: rgb(255, 99, 43, 0.7);
+    border-radius: .5rem;
 }
 
 .searchBtn {

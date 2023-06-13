@@ -1,3 +1,14 @@
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: .25s;
+}
+
+a:hover {
+  color: rgb(255, 99, 43);
+  transition: .25s;
+}
+
 .App {
   text-align: center;
   height: 100%;

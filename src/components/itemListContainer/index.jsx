@@ -3,11 +3,18 @@ import ItemList from '../itemList';
 import products from '../../assets/data/products.json';
 import './listContainer.css';
 
-const ItemListContainer = () => {
+let ItemListContainer = ({ selectedCategory }) => {
+  // Filtra los productos en función de la categoría seleccionada
+  const filteredProducts = selectedCategory ? products.filter(
+    (item) => item.type == selectedCategory
+  ) : products;
+
+  console.log(filteredProducts);
+
   return (
     <div className="mainContainer">
       <h1>Lista de Productos</h1>
-      <ItemList products={products} />
+      <ItemList products={filteredProducts} />
     </div>
   );
 };

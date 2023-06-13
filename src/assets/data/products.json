@@ -4,7 +4,7 @@
        "title":"Set 'Tejedestinos'",
        "price":4899.9,
        "type": "Dados",
-       "desc": "Aca va la descripcao",
+       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
        "stock": "17",
        "image":"Tejedestinos.jpg"
     },
@@ -37,6 +37,15 @@
     },
     {
       "id": 5,
+      "title":"Tablero Takcimonte",
+      "price":3199.9,
+      "type": "Tableros",
+      "desc": "Aca va la descripcao",
+      "stock": "3",
+      "image":"placeholderImage.jpg"
+    },
+    {
+      "id": 6,
       "title":"Set 'Star Wars'",
       "price":4799.9,
       "type": "Dados",

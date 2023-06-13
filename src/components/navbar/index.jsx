@@ -8,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {NavLink} from 'react-router-dom';
 
 function NavbarScroll() {
   return (
@@ -22,15 +23,17 @@ function NavbarScroll() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link><NavLink to="/">Home</NavLink></Nav.Link>
             <NavDropdown className="navbar-links" title="Categorias" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Dados</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Tableros
+              <NavDropdown.Item>
+                <NavLink to="/dices">Dados</NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item NavLink to >
+                <NavLink to="/tabletops">Tableros</NavLink>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Merch
+                <NavLink to="/bundles">Bundles</NavLink>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

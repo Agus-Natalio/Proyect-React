@@ -6,6 +6,7 @@
   color: #f1f1f1;
   height: 2.75rem;
   width: 2.75rem;
+  transition: .25s;
 }
 
 .itemCounter__addItemBtn:disabled {

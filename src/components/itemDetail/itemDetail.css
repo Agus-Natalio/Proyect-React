@@ -1,4 +1,4 @@
-p {
+.modalContent p {
     font-weight: normal;
 }
 
@@ -49,5 +49,6 @@ hr {
 .modalImg {
     height: 16rem;
     width: 14rem;
-    border-radius: 1rem;
+    margin-top: .75rem;
+    border-radius: .75rem;
 }

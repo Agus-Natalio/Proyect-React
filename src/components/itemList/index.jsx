@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Item from '../item';
-import products from '../../assets/data/products.json';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Spinner from 'react-bootstrap/Spinner';
 import './itemList.css';
 
-const ItemList = () => {
+const ItemList = ({products}) => {
   const [loading, setLoading] = useState(true);
   const [productList, setProductList] = useState([]);
 
@@ -31,6 +30,8 @@ const ItemList = () => {
         setLoading(false);
       });
   }, []);
+
+  console.log(products);
 
   return (
     <Container>

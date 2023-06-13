@@ -26,12 +26,16 @@ function MyVerticallyCenteredModal(props) {
         <Container>
         <Row>
           <Col sm={4}><img className="modalImg" src={image} alt={product.image} /></Col>
-          <Col sm={8}>
+          <Col className="modalContent" sm={8}>
             <h3>{product.title}</h3>
             <h5>KaiHammer</h5>
             <br></br>
             <p>{product.desc}</p>         
-            <p className="modalStock">Stock: {product.stock}</p>
+            {product.stock < 10 ? (
+              <p className="modalStock">¡Solo quedan {product.stock} unidades!</p>
+            ) : (
+              <p className="modalStock">Quedan {product.stock} unidades</p>
+            )}
             <h5>$ {product.price}</h5>
             <br></br>  
             <ItemCount stock={product.stock}/>
