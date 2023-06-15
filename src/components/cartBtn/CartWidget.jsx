@@ -27,11 +27,10 @@ const CartBadge = () => {
       <>
         <div className='cart'>
             <a href="#" onClick={handleShow}>
-                <FontAwesomeIcon icon={faCartShopping} size="2xl" style={{color: "#f1f1f1",}} className="cartIcon" />
+                <FontAwesomeIcon icon={faCartShopping} size="xl" style={{color: "#f1f1f1",}} className="cartIcon" />
             </a>
             <span className='cart-badge'>3</span>
         </div>
-
   
         <Offcanvas show={show} onHide={handleClose} className="cartDisplay">
           <Offcanvas.Header closeButton>

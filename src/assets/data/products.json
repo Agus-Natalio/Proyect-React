@@ -1,6 +1,6 @@
 [
     {
-       "id": 1, 
+       "id": "DadosId", 
        "title":"Set 'Tejedestinos'",
        "price":4899.9,
        "type": "Dados",
@@ -9,7 +9,7 @@
        "image":"Tejedestinos.jpg"
     },
     {
-       "id": 2, 
+       "id": "DadosId", 
        "title":"Set 'Alto Saqueras'",
        "price":4799.9,
        "type":"Dados",
@@ -18,7 +18,7 @@
        "image":"altoSaqueras.jpg"
     },
     {
-      "id": 3,
+      "id": "DadosId",
       "title":"Set 'Niimatra'",
       "price": 4999.9,
       "type": "Dados",
@@ -27,7 +27,25 @@
       "image":"Niimatra.jpg"
     },
     {
-      "id": 4,
+      "id": "BundleId",
+      "title":"Star Wars Bundle",
+      "price": 18999.9,
+      "type": "Bundles",
+      "desc": "Aca va la descripcao",
+      "stock": "17",
+      "image":"placeholderImage.jpg"
+    },
+    {
+      "id": "BundleId",
+      "title":"Shularan Bundle",
+      "price": 20000,
+      "type": "Bundles",
+      "desc": "Aca va la descripcao",
+      "stock": "11",
+      "image":"placeholderImage.jpg"
+    },
+    {
+      "id": "DadosId",
       "title":"Set 'Luna Sangrienta'",
       "price":4799.9,
       "type": "Dados",
@@ -36,7 +54,7 @@
       "image":"lunaSangrienta.jpg"
     },
     {
-      "id": 5,
+      "id": "TablerosId",
       "title":"Tablero Takcimonte",
       "price":3199.9,
       "type": "Tableros",
@@ -45,7 +63,7 @@
       "image":"placeholderImage.jpg"
     },
     {
-      "id": 6,
+      "id": "DadosId",
       "title":"Set 'Star Wars'",
       "price":4799.9,
       "type": "Dados",

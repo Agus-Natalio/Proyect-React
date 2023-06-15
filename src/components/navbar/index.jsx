@@ -8,14 +8,16 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { ROUTES } from '../../constants/routes';
+import { CATEGORIES } from '../../constants/categories';
 import {NavLink} from 'react-router-dom';
 
 function NavbarScroll() {
   return (
     <Navbar className="navbar" expand="lg">
       <Container className="mx-5 d-flex justify-content-center" fluid>
-        <a href="#"><img className="logo" src={logo} alt="logo" /></a>
-        <Navbar.Brand href="#">KaiHammer</Navbar.Brand>
+        <NavLink to="/"><img className="logo" src={logo} alt="logo" /></NavLink>
+        <Navbar.Brand><NavLink to="/" style={{fontFamily: 'titleFont'}}>KaiHammer</NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -25,16 +27,11 @@ function NavbarScroll() {
           >
             <Nav.Link><NavLink to="/">Home</NavLink></Nav.Link>
             <NavDropdown className="navbar-links" title="Categorias" id="navbarScrollingDropdown">
-              <NavDropdown.Item>
-                <NavLink to="/dices">Dados</NavLink>
-              </NavDropdown.Item>
-              <NavDropdown.Item NavLink to >
-                <NavLink to="/tabletops">Tableros</NavLink>
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                <NavLink to="/bundles">Bundles</NavLink>
-              </NavDropdown.Item>
+              {CATEGORIES.map((category) =>(
+                <NavDropdown.Item key={category.id}>
+                  <NavLink to={ROUTES.CATEGORY.replace(":categoryType", category.label)}>{category.label}</NavLink>
+                </NavDropdown.Item>
+              ))}
             </NavDropdown>
           </Nav>
           <CartBadge/>

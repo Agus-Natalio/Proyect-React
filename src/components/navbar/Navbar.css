@@ -4,7 +4,7 @@
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     font-weight: 500;
     margin-bottom: .5rem;
@@ -18,7 +18,7 @@
 .navbar-nav .nav-link {
     color: #fff !important;
     font-weight: 500;
-    font-size: 1.10rem;
+    font-size: 1.15rem;
 }
 
 .navbar-nav:hover .nav-link:hover {
@@ -31,6 +31,13 @@
 
 .logo {
     width: 6rem;
+    transition: .25s;
+    transform: scale(1.10);
+}
+
+.logo:hover {
+    transform: scale(1.25);
+    transition: .25s;
 }
 
 .navbar-links {
@@ -51,10 +58,11 @@
     text-decoration: none;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover, .dropdown-item:active {
     transition: .25s;
     background-color: rgb(255, 99, 43, 0.7);
     border-radius: .5rem;
+    color: rgb(255, 99, 43)!important;
 }
 
 .searchBtn {

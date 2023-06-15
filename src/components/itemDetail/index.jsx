@@ -28,7 +28,7 @@ function MyVerticallyCenteredModal(props) {
           <Col sm={4}><img className="modalImg" src={image} alt={product.image} /></Col>
           <Col className="modalContent" sm={8}>
             <h3>{product.title}</h3>
-            <h5>KaiHammer</h5>
+            <h4 style={{fontFamily: 'titleFont'}}>KaiHammer</h4>
             <br></br>
             <p>{product.desc}</p>         
             {product.stock < 10 ? (
