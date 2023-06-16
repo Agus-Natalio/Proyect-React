@@ -1,7 +1,8 @@
 .itemCard {
+    width: 18rem;
     background-color: #474747;
     color: #f1f1f1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .itemType {

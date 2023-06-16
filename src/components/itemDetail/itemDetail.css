@@ -1,54 +1,26 @@
-.modalContent p {
-    font-weight: normal;
-}
-
-hr {
+h3 {
     color: rgb(255, 99, 43);
 }
 
-.modalHeader, .modalFooter {
+.infoContainer {
+    box-shadow: 5px 5px 15px rgb(255, 99, 43), -5px -5px 15px rgb(255, 99, 43);
+    margin: 6.5rem 18rem;
+    padding: 5rem;
+    border-radius: 2rem;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.modalBody {
-    background-color: #11053b;
-    color: rgb(255, 99, 43);
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.modalStock {
-    font-size: .75rem;
-}
-
-.modalBtn {
-    background-color: #f1f1f1;
-    color: rgb(255, 99, 43);
-    border-color: rgb(255, 99, 43);
-}
-
-.modalBtn:hover {
-    background-color: rgb(255, 99, 43);
-    border-color: rgb(255, 99, 43);
-    color: #f1f1f1;
-}
-
-.modalBtn:active {
-    background-color: rgb(206, 55, 0)!important;
-    border-color: rgb(206, 55, 0)!important;
-}
-
-.btn-close {
-    opacity: 1;
-    color: #f1f1f1;
-}
-
-.btn-close:hover {
-    background-color: rgb(206, 55, 0)!important;
-    opacity: 1;
-}
-
-.modalImg {
-    height: 16rem;
-    width: 14rem;
-    margin-top: .75rem;
-    border-radius: .75rem;
+.infoContainer img {
+    border: solid rgb(255, 99, 43);;
+    border-radius: 1.25rem;
+    width: 25rem;
 }

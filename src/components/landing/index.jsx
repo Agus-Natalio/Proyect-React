@@ -23,11 +23,11 @@ function Landing() {
                 </div>
                 <br/>
                 <div className="landingContainer__footer">
-                    <p>¡<span>KaiHammer</span> les desea a todos un excelente existencia!</p>
+                    <p>¡<span>KaiHammer</span> les desea a todos una excelente existencia!</p>
                     <div>
                         <Link to="/products">
                             <button className='landingContainer__btn'>
-                                Ir a productos
+                                Ver productos
                             </button>
                         </Link>
                     </div>

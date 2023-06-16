@@ -1,6 +1,6 @@
 [
     {
-       "id": "DadosId", 
+       "id": 1, 
        "title":"Set 'Tejedestinos'",
        "price":4899.9,
        "type": "Dados",
@@ -9,7 +9,7 @@
        "image":"Tejedestinos.jpg"
     },
     {
-       "id": "DadosId", 
+       "id": 2, 
        "title":"Set 'Alto Saqueras'",
        "price":4799.9,
        "type":"Dados",
@@ -18,56 +18,56 @@
        "image":"altoSaqueras.jpg"
     },
     {
-      "id": "DadosId",
+      "id": 3,
       "title":"Set 'Niimatra'",
       "price": 4999.9,
       "type": "Dados",
-      "desc": "Aca va la descripcao",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
       "stock": "13",
       "image":"Niimatra.jpg"
     },
     {
-      "id": "BundleId",
+      "id": 4,
       "title":"Star Wars Bundle",
       "price": 18999.9,
       "type": "Bundles",
-      "desc": "Aca va la descripcao",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
       "stock": "17",
       "image":"placeholderImage.jpg"
     },
     {
-      "id": "BundleId",
+      "id": 5,
       "title":"Shularan Bundle",
       "price": 20000,
       "type": "Bundles",
-      "desc": "Aca va la descripcao",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
       "stock": "11",
       "image":"placeholderImage.jpg"
     },
     {
-      "id": "DadosId",
+      "id": 6,
       "title":"Set 'Luna Sangrienta'",
       "price":4799.9,
       "type": "Dados",
-      "desc": "Aca va la descripcao",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
       "stock": "11",
       "image":"lunaSangrienta.jpg"
     },
     {
-      "id": "TablerosId",
+      "id": 7,
       "title":"Tablero Takcimonte",
       "price":3199.9,
       "type": "Tableros",
-      "desc": "Aca va la descripcao",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
       "stock": "3",
       "image":"placeholderImage.jpg"
     },
     {
-      "id": "DadosId",
+      "id": 8,
       "title":"Set 'Star Wars'",
       "price":4799.9,
       "type": "Dados",
-      "desc": "Aca va la descripcao",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
       "stock": "30",
       "image":"swDices.jpg"
     }

@@ -60,9 +60,8 @@
 
 .dropdown-item:hover, .dropdown-item:active {
     transition: .25s;
-    background-color: rgb(255, 99, 43, 0.7);
-    border-radius: .5rem;
-    color: rgb(255, 99, 43)!important;
+    background-color: rgb(0, 0, 0, 0);
+    margin-left: .75rem;
 }
 
 .searchBtn {

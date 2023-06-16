@@ -1,5 +1,6 @@
 export const ROUTES = {
     LANDING: "/",
     HOME: "/products",
-    CATEGORY: "/category/:categoryType"
+    CATEGORY: "/category/:categoryType",
+    ITEM: "/item/:itemID"
 };

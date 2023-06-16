@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ItemCount.css';
 
 function ItemCount({ stock }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   const incrementCount = () => {
     if (count < stock) {
@@ -11,7 +11,7 @@ function ItemCount({ stock }) {
   };
 
   const decrementCount = () => {
-    if (count > 0) {
+    if (count > 1) {
       setCount(count - 1);
     }
   };
@@ -19,7 +19,7 @@ function ItemCount({ stock }) {
   return (
     <div>
       <div className="itemCounter">
-        <button className="itemCounter__addItemBtn" onClick={decrementCount} disabled={count == 0}>-</button>
+        <button className="itemCounter__addItemBtn" onClick={decrementCount} disabled={count == 1}>-</button>
         <span className="m-5">{count}</span>
         <button className="itemCounter__addItemBtn" onClick={incrementCount} disabled={count == stock}>+</button>
       </div>
