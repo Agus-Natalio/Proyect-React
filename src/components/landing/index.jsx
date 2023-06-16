@@ -24,7 +24,8 @@ function Landing() {
                 <br/>
                 <div className="landingContainer__footer">
                     <p>¡<span>KaiHammer</span> les desea a todos una excelente existencia!</p>
-                    <div>
+                    <br />
+                    <div className="landingContainer__footerBtn">
                         <Link to="/products">
                             <button className='landingContainer__btn'>
                                 Ver productos

@@ -1,7 +1,4 @@
 .landingContainer__img {
-    width: 40rem;
-    display: flex;
-    flex: 1;
     width: 104%;
     height: 100%;
 }
@@ -47,8 +44,12 @@ span {
 }
 
 .landingContainer__btn:hover {
-    color: rgb(255, 99, 43);
     background-color: #11053b;
     border: solid #11053b;
     transition: .25s;
+}
+
+.landingContainer__footerBtn {
+    display: flex;
+    justify-content: center;
 }
