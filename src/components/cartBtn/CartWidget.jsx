@@ -36,9 +36,8 @@ const CartBadge = () => {
           <Offcanvas.Header closeButton>
             <Offcanvas.Title>Carrito</Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
-            El carromato esta total y absolutamente vacio. Quiza, y tan solo quiza, 
-            asi es como se ve el oscuro e impio corazon de Octo, completamente desprovisto de cordura y piedad
+          <Offcanvas.Body className="cartDisplay__msg">
+            El carrito se encuentra vacio
           </Offcanvas.Body>
         </Offcanvas>
       </>

@@ -43,7 +43,7 @@ const ItemList = ({products}) => {
         <>
           <Row>
             {productList.map((product) => (
-              <Col key={product.id}>
+              <Col md={3} key={product.id}>
                 <Item product={product} />
               </Col>
             ))}

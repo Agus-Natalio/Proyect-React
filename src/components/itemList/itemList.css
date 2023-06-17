@@ -1,3 +1,9 @@
 .loadSpinner {
-    margin: 15rem!important;
+    margin: 20rem 15rem!important;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

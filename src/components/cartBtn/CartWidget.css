@@ -38,6 +38,15 @@
     color: rgb(255, 99, 43);
 }
 
+.cartDisplay__msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25rem 2.5rem;
+    border: solid rgb(255, 99, 43);
+    border-radius: .75rem;
+}
+
 .btn-close {
     opacity: 1;
     background-color: rgb(255, 99, 43);

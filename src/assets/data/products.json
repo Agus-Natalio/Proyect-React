@@ -70,5 +70,23 @@
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
       "stock": "30",
       "image":"swDices.jpg"
+    },
+    {
+      "id": 9,
+      "title":"Tablero de Oricalco",
+      "price":2000,
+      "type": "Tableros",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "stock": "24",
+      "image":"placeholderImage.jpg"
+    },
+    {
+      "id": 10,
+      "title":"Heroes de Norion Bundle",
+      "price":21000,
+      "type": "Bundles",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+      "stock": "13",
+      "image":"placeholderImage.jpg"
     }
 ]
