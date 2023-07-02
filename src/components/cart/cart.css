@@ -1,0 +1,45 @@
+h3 {
+    color: rgb(255, 99, 43);
+}
+
+.infoContainer {
+    box-shadow: 5px 5px 15px rgb(255, 99, 43), -5px -5px 15px rgb(255, 99, 43);
+    margin: 6.5rem 18rem;
+    padding: 5rem;
+    border-radius: 2rem;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+}
+
+.btnContainer__btn {
+    background-color: #f1f1f1;
+    border-color: rgb(255, 99, 43);
+    color: rgb(255, 99, 43);
+}
+
+.btnContainer__btn:hover, .btnContainer__btn:active {
+    background-color: rgb(255, 99, 43)!important;
+    border-color: rgb(255, 99, 43)!important;
+    color: #f1f1f1!important;
+}
+
+.btnContainer__OctoFiles {
+    background-color: #f1f1f1;
+    border-color: rgb(117, 6, 6);
+    color: rgb(117, 6, 6)
+}
+
+.btnContainer__OctoFiles:hover, .btnContainer__OctoFiles:active {
+    background-color: rgb(99, 0, 0)!important;
+    border-color: rgb(99, 6, 6)!important;
+    color: #f1f1f1!important;
+}

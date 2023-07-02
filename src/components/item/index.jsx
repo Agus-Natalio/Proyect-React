@@ -15,15 +15,13 @@ const Item = ({ product }) => {
     <div className="item">
       <Card className="itemCard">
         <Card.Body>
-          <Card.Text className="itemType">{product.type}</Card.Text>
           <Card.Img className="itemImg" variant="top" src={image} alt={product.title} />
           <Card.Title className="itemTitle">{product.title}</Card.Title>
-          <ItemCount stock={product.stock} />
           <Link to={ROUTES.ITEM.replace(':itemID', product.id)}>
             <Button className="itemBtn">Ver detalle</Button>          
           </Link>
           <Button className="itemBtn purchaseBtn" variant="primary">
-            Purchase
+            Agregar
           </Button>
         </Card.Body>
         <ListGroup className="list-group-flush">

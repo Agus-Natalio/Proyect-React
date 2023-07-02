@@ -5,7 +5,7 @@
 }
 
 .purchase:hover {
-    background-color: rgb(34, 202, 19);
-    border-color: rgb(34, 202, 19);
+    background-color: rgb(42, 187, 28);
+    border-color: rgb(42, 187, 28);
     box-shadow: 0 0 10px rgb(34, 202, 19), 0 0 15px rgb(34, 202, 19), 0 0 30px #fff;
 }
