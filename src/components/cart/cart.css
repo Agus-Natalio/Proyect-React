@@ -4,8 +4,8 @@ h3 {
 
 .cartChart {
     box-shadow: 5px 5px 15px rgb(255, 99, 43), -5px -5px 15px rgb(255, 99, 43);
-    margin: 15rem 15rem;
-    padding: 5rem;
+    margin: 15rem 20rem;
+    padding: 4.5rem;
     border-radius: 2rem;
     background-color: #f1f1f1;
     display: flex;

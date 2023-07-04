@@ -8,18 +8,21 @@ import Detail from './pages/detail';
 import CartPage from './pages/cart';
 import { ROUTES } from './constants/routes';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CartProvider from "./components/cartContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path={ROUTES.LANDING} element={<LandingPage />} />
-        <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.CATEGORY} element={<Category />} />
-        <Route path={ROUTES.ITEM} element={<Detail />} />
-        <Route path={ROUTES.CART} element={<CartPage />} />
-      </Routes>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path={ROUTES.LANDING} element={<LandingPage />} />
+          <Route path={ROUTES.HOME} element={<Home />} />
+          <Route path={ROUTES.CATEGORY} element={<Category />} />
+          <Route path={ROUTES.ITEM} element={<Detail />} />
+          <Route path={ROUTES.CART} element={<CartPage />} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

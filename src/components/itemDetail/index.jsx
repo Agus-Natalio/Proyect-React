@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import ItemCount from '../itemCount';
 import EndBtns from '../endBtns';
+import { CartContext } from '../cartContext';
 import './itemDetail.css';
 
 const ItemDetail = ({ item }) => {
   const [showItemCount, setShowItemCount] = useState(true);
   const [selectedItemCount, setSelectedItemCount] = useState(0);
+  const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = (count) => {
+    const product = {
+      id: item.id,
+      title: item.title,
+      price: item.price,
+      image: item.image,
+      quantity: count
+    }; 
+    console.log(product);
+    addToCart(product)
     setSelectedItemCount(count);
     setShowItemCount(false);
     // Aquí puedes agregar la lógica para guardar el valor `count` en tu carrito o realizar cualquier otra acción necesaria
@@ -35,7 +46,7 @@ const ItemDetail = ({ item }) => {
           <h5>${item.price}</h5>
           <br />
           {showItemCount && <ItemCount stock={item.stock} onAddToCart={handleAddToCart} />}
-          {!showItemCount && <EndBtns itemCountValor={selectedItemCount} />}
+          {!showItemCount && <EndBtns itemCountValor={selectedItemCount} itemID={item.id} />}
         </Col>
       </Row>
     </div>
