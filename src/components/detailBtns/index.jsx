@@ -10,7 +10,7 @@ function DetailBtns() {
     <Stack gap={2} className="mx-auto">
       <Button className="detailBtn purchase col-md-7" variant="secondary">Añadir al carrito</Button>
       <Link to={ROUTES.HOME}>
-        <Button className="detailBtn col-md-7" variant="outline-secondary">Volver</Button>
+        <Button className="detailBtn col-md-7" variant="outline-secondary">Volver al Catalogo</Button>
       </Link>
     </Stack>
   );

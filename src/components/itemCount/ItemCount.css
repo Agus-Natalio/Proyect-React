@@ -23,3 +23,31 @@
   padding: .25rem .5rem;
   border-radius: 2rem;
 }
+
+.viewCartBtn {
+  background-color: #f1f1f1;
+  border-color: rgb(255, 99, 43);
+  color: rgb(255, 99, 43);
+}
+
+.purchase {
+  background-color: rgb(26, 153, 15);
+  border-color: rgb(26, 153, 15);
+  margin-bottom: .25rem;
+}
+
+.purchase:hover {
+  background-color: rgb(42, 187, 28);
+  border-color: rgb(42, 187, 28);
+  box-shadow: 0 0 10px rgb(34, 202, 19), 0 0 15px rgb(34, 202, 19), 0 0 30px #fff;
+}
+
+.purchase:Active {
+  background-color: rgb(44, 199, 30)!important;
+  border-color: rgb(44, 199, 30)!important;
+}
+
+.viewCartBtn:hover {
+  background-color: rgb(255, 99, 43);
+  color: #f1f1f1;
+}

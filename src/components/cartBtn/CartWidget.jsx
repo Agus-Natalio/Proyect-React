@@ -11,7 +11,7 @@ const CartBadge = () => {
             <a href="#">
                 <FontAwesomeIcon icon={faCartShopping} size="xl" style={{color: "#f1f1f1",}} className="cartIcon" />
             </a>
-            <span className='cart-badge'>3</span>
+            <span className='cart-badge'>7</span>
         </div>
       </>
     );

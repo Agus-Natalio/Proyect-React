@@ -32,15 +32,6 @@
     border-color: rgb(255, 99, 43)!important;
 }
 
-.purchaseBtn {
-    margin-left: 1rem;
-}
-
-.purchaseBtn:hover, .purchaseBtn:active {
-    background-color: rgb(26, 153, 15)!important;
-    border-color: rgb(26, 153, 15)!important;
-}
-
 .itemFooter {
     background-color: #f1f1f1;
     color: rgb(255, 99, 43);

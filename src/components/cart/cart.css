@@ -2,9 +2,9 @@ h3 {
     color: rgb(255, 99, 43);
 }
 
-.infoContainer {
+.cartChart {
     box-shadow: 5px 5px 15px rgb(255, 99, 43), -5px -5px 15px rgb(255, 99, 43);
-    margin: 6.5rem 18rem;
+    margin: 15rem 15rem;
     padding: 5rem;
     border-radius: 2rem;
     background-color: #f1f1f1;

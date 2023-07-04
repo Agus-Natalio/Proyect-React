@@ -31,8 +31,6 @@ const ItemList = ({products}) => {
       });
   }, []);
 
-  console.log(products);
-
   return (
     <Container>
       {loading ? (

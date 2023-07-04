@@ -4,7 +4,6 @@ import { ROUTES } from '../../constants/routes';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import ItemCount from '../itemCount';
 import './Item.css';
 
 const Item = ({ product }) => {
@@ -20,9 +19,6 @@ const Item = ({ product }) => {
           <Link to={ROUTES.ITEM.replace(':itemID', product.id)}>
             <Button className="itemBtn">Ver detalle</Button>          
           </Link>
-          <Button className="itemBtn purchaseBtn" variant="primary">
-            Agregar
-          </Button>
         </Card.Body>
         <ListGroup className="list-group-flush">
           <ListGroup.Item className="itemFooter">

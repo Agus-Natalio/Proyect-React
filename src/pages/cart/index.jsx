@@ -8,7 +8,7 @@ function CartPage() {
       <Navbar />
       <hr className="divider" />
       <main>
-        <Cart />
+      <Cart />
       </main>
     </div>
   );
