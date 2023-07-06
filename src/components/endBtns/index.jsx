@@ -8,21 +8,22 @@ import './endBtns.css';
 
 function EndBtns({ itemCountValor, itemID }) {
   const { isInCart } = useContext(CartContext);
+  const itemInCart = isInCart(itemID);
+  console.log(itemID);
 
   return (
     <div>
-      {isInCart(itemID) ? (
+      {itemInCart ? (
         <p className="endText">Ya agregaste este item al carrito</p>
       ) : (
         <p className="endText">
-          {itemCountValor === 1 ? (
+          {itemCountValor == 1 ? (
             'Se agregó 1 unidad al carrito'
           ) : (
             `Se agregaron ${itemCountValor} unidades al carrito`
           )}
         </p>
       )}
-
       <br />
       <Stack gap={2} className="mx-auto">
         <Link to={ROUTES.CART}>

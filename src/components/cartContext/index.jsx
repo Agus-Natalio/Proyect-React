@@ -18,9 +18,12 @@ const CartProvider = ({ children }) => {
   };
 
   const isInCart = (productId) => {
-    const foundItem = cartItems.find((item) => item.id === productId);
+    console.log(productId);
+    const foundItem = cartItems.find((item) => item.id == productId);
     return foundItem !== undefined;
   };
+
+  console.log('cartItems:', cartItems);
 
   return (
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, clearCart, isInCart }}>

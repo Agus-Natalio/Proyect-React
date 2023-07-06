@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from '../../components/cart';
+import CartList from '../../components/cartList';
 import Navbar from '../../components/navbar';
 
 function CartPage() {
@@ -8,7 +8,7 @@ function CartPage() {
       <Navbar />
       <hr className="divider" />
       <main>
-      <Cart />
+      <CartList />
       </main>
     </div>
   );

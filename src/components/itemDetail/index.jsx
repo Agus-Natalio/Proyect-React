@@ -8,7 +8,7 @@ import './itemDetail.css';
 const ItemDetail = ({ item }) => {
   const [showItemCount, setShowItemCount] = useState(true);
   const [selectedItemCount, setSelectedItemCount] = useState(0);
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, isInCart } = useContext(CartContext);
 
   const handleAddToCart = (count) => {
     const product = {
@@ -16,10 +16,14 @@ const ItemDetail = ({ item }) => {
       title: item.title,
       price: item.price,
       image: item.image,
-      quantity: count
+      quantity: count,
+      subtotal: item.price * count
     }; 
     console.log(product);
-    addToCart(product)
+    const itemInCart = isInCart(product.id)
+    if (!itemInCart){
+      addToCart(product)
+    }
     setSelectedItemCount(count);
     setShowItemCount(false);
     // Aquí puedes agregar la lógica para guardar el valor `count` en tu carrito o realizar cualquier otra acción necesaria

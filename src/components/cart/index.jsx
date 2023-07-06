@@ -1,22 +1,24 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { Link } from "react-router-dom";
-import { ROUTES } from "../../constants/routes";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import "./cart.css";
 
-function Cart () {
+function Cart ({ item }) {
+
+    const image = require(`../../assets/images/${item.image}`);
+
     return (
-      <div className='cartChart'>
-          <Row>
-            <Col>
-                <h3>EL CARRITO ESTA VACIO</h3>
-                <div className="btnContainer">
-                    <Link to={ROUTES.HOME}><Button className="btnContainer__btn">VOLVER AL CATALOGO</Button></Link>
-                </div>
-            </Col>
-          </Row>
+      <div classNamer="cartItem">
+        <div className="cartItemInfo">
+          <img src={image} alt={item.title} />
+          <h4>{item.title}</h4>
+          <p>Precio: ${item.price}</p>
+          <p>Cantidad: {item.quantity}</p>
+          <p>Subtotal: {item.subtotal}</p>
+          <div className="cartItemInfo__trashCan">
+            <a href="#"><FontAwesomeIcon icon={faTrashCan} size="xl" style={{color: "#f1f1f1",}} className="cartItemInfo__trashCan" /></a>
+          </div>
+        </div>
       </div>
     )
 }
