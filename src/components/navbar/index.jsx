@@ -34,7 +34,7 @@ function NavbarScroll() {
               ))}
             </NavDropdown>
           </Nav>
-          <NavLink to={ROUTES.CART}><CartBadge/></NavLink>
+          <NavLink to={ROUTES.CART}><CartBadge /></NavLink>
           <Form className="d-flex">
             <Form.Control
               type="search"

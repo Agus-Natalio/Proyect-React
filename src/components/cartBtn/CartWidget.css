@@ -6,7 +6,7 @@
 .cart-badge {
     position: absolute;
     color: rgb(255, 99, 43);
-    padding: .5px 6px;
+    padding: .5px 12px;
     font-size: 14px;
     font-weight: bold;
     transition: .5s;
@@ -18,11 +18,7 @@
 
 .cartIcon:hover {
     transition: .25s;
-    background-color: #f1f1f1;
-    box-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 30px #fff;
     color: rgb(255, 99, 43)!important;
-    padding: .25rem;
-    border-radius: 40%;
 }
 
 .cartDisplay {

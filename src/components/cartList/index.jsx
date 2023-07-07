@@ -10,7 +10,11 @@ import { CartContext } from "../cartContext";
 
 function CartList () {
 
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, clearCart } = useContext(CartContext);
+    const handleEmptyCart = () => {
+        clearCart();
+    }
+    const totalPrice = cartItems.reduce((total, item) => total + item.subtotal, 0).toFixed(1);
 
     if (cartItems.length == 0) {
         return (
@@ -38,7 +42,9 @@ function CartList () {
                 ))}
             </Row>
             <div className="btnContainer">
+              <p className="btnContainer__total">Total: ${totalPrice}</p>
               <Link to={ROUTES.HOME}><Button className="btnContainer__btn">VOLVER AL CATALOGO</Button></Link>
+              <Button className="btnContainer__emptyCart" onClick={handleEmptyCart}>VACIAR CARRITO</Button>
             </div>
         </Container>
     )

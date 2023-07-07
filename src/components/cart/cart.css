@@ -18,19 +18,41 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position:relative;
 }
 
 .btnContainer {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     padding-top: 1.5rem;
+}
+
+.btnContainer__total {
+    color: rgb(255, 99, 43);
+    font-size: 1.15rem; 
+    padding-right: 30rem;
+    margin: 0;
 }
 
 .btnContainer__btn {
     background-color: #f1f1f1;
     border-color: rgb(255, 99, 43);
     color: rgb(255, 99, 43);
+}
+
+.btnContainer__emptyCart {
+    background-color: red;
+    border-color: red;
+    color: #f1f1f1;
+}
+
+.btnContainer__emptyCart:hover, .btnContainer__emptyCart:active {
+    background-color: rgb(151, 3, 3);
+    border-color: rgb(151, 3, 3);
+    color: #f1f1f1;
 }
 
 .btnContainer__btn:hover, .btnContainer__btn:active {
@@ -40,29 +62,35 @@
 }
 
 .cartItemInfo {
-    display: flex;
     align-items: center;
-    gap: 5rem;
-    margin: 1.5rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-right: 2.5rem;
     background: rgb(255, 127, 81);
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     box-shadow: 3px 3px 8px #3a3a3a;
+    width: 100%;
 }
 
 .cartItemInfo img {
     width: 5.5rem;
-    border-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 
 .cartItemInfo__trashCan {
-    display: flex!important;
+    display: flex;
+    justify-content: end;
     transition: .25s;
 }
 
 .cartItemInfo__trashCan:hover {
     color: rgb(255, 0, 0)!important;
-    background-color: #f1f1f1;
-    padding: .15rem;
-    border-radius: 20%;
     transition: .25s;
+}
+
+.theTrashCan:hover {
+    cursor: pointer;
 }
