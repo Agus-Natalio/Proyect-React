@@ -4,7 +4,7 @@ import { CartContext } from '../cartContext';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import createOrder from '../../firebase/order';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './buyForm.css';
 
