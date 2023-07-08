@@ -11,7 +11,7 @@ const getItems = async () => {
     });
   } catch (error) {
     console.error('Error fetching items:', error);
-    return []; // Return an empty array or handle the error as needed
+    return [];   //Retorna un array vacio en caso de que no se pueda adquirir la informacion
   }
 };
 

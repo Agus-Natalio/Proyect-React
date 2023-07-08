@@ -1,7 +1,7 @@
 export const ROUTES = {
     LANDING: "/",
     HOME: "/products",
-    CATEGORY: "/category/:categoryType",
+    CATEGORY: "/category/:categoryName",
     CART: "/cart",
     ITEM: "/item/:itemID"
 };

@@ -24,3 +24,8 @@ h3 {
     border-radius: 1.25rem;
     width: 25rem;
 }
+
+.detSpinner {
+    margin: 10rem;
+    color: rgb(255, 99, 43)!important;
+}

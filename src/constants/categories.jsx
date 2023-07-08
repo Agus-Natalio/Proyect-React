@@ -10,5 +10,5 @@ export const CATEGORIES = [
     {
         id: "BundlesId",
         label: "Bundles",
-    },
+    }
 ];

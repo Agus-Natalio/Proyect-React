@@ -44,8 +44,8 @@
 }
 
 .btnContainer__emptyCart {
-    background-color: red;
-    border-color: red;
+    background-color: rgb(211, 23, 23);
+    border-color: rgb(211, 23, 23);
     color: #f1f1f1;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .cartItemInfo__trashCan:hover {
-    color: rgb(255, 0, 0)!important;
+    color: rgb(211, 23, 23)!important;
     transition: .25s;
 }
 

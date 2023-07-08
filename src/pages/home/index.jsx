@@ -1,11 +1,14 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../App.css';
+import { useParams } from 'react-router-dom';
 import Navbar from '../../components/navbar';
 import Hero from '../../components/hero';
 import ItemListContainer from '../../components/itemListContainer';
 
 function Home() {
+
+  const { categoryName } = useParams();
+  console.log(categoryName);
+
   return (
     <div className="App">
       <Navbar />
