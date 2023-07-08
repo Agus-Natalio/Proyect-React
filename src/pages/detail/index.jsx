@@ -22,11 +22,10 @@ const Detail = () => {
             setSelectedItem({ id: itemSnapshot.id, ...itemData });
           })()
         : (() => {
-            console.log('Item not found');
             setSelectedItem(null);
         })();
       } catch (error) {
-        console.error('Error fetching item:', error);
+        prompt.error('Error al recopilar la data', error);
         setSelectedItem(null);
       }
     };

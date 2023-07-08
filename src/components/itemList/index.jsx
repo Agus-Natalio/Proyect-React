@@ -32,7 +32,7 @@ const ItemList = () => {
 
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        prompt.error('Error recopilando los datos', error);
         setLoading(false);
       }
     };

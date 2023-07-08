@@ -9,9 +9,6 @@ import './endBtns.css';
 function EndBtns({ itemID }) {
   const { isInCart } = useContext(CartContext);
   const itemInCart = isInCart(itemID);
-  console.log(itemID);
-  console.log('itemID: '+itemID);
-  console.log(itemInCart);
 
   return (
     <>

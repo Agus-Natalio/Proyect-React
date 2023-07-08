@@ -18,7 +18,6 @@ const ItemDetail = ({ item }) => {
       quantity: count,
       subtotal: item.price * count
     }; 
-    console.log(product);
     const itemInCart = isInCart(product.id)
     if (!itemInCart){
       addToCart(product)

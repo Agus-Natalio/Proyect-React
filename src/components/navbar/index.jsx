@@ -22,7 +22,7 @@ function NavbarScroll() {
         const categoriesData = await getCategories();
         setCategories(categoriesData);
       } catch (error) {
-        console.error('Error fetching categories:', error);
+        prompt.error('Error al recopilar la data', error);
       }
     }
 

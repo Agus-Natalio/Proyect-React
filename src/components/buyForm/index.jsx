@@ -41,7 +41,6 @@ function CheckoutForm() {
 
     createOrder(orderData)
       .then((orderId) => {
-        console.log('Order created with ID:', orderId);
         clearCart();
         navigate('/');
         toast.success(`👌 Compra exitosa! Orden de compra: ${orderId}`, {
@@ -56,7 +55,7 @@ function CheckoutForm() {
           });
       })
       .catch((error) => {
-        console.error('Error creating order:', error);
+        prompt.error('Error al crear la orden', error);
       });
   };
 
