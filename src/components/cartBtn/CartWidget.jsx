@@ -6,8 +6,7 @@ import { CartContext } from '../cartContext';
 
 const CartWidget = () => {
 
-  const { cartItems } = useContext(CartContext)
-  const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const { getTotalItemCount } = useContext(CartContext);
 
     return (
       <>
@@ -15,7 +14,7 @@ const CartWidget = () => {
             <a href="#">
                 <FontAwesomeIcon icon={faCartShopping} size="xl" style={{color: "#f1f1f1",}} className="cartIcon" />
             </a>
-            {cartItemCount > 0 && <span className='cart-badge'>{cartItemCount}</span>}
+            {getTotalItemCount() > 0 && <span className='cart-badge'>{getTotalItemCount()}</span>}
         </div>
       </>
     );

@@ -32,6 +32,9 @@ function NavbarScroll() {
                   <NavLink to={ROUTES.CATEGORY.replace(":categoryType", category.label)}>{category.label}</NavLink>
                 </NavDropdown.Item>
               ))}
+              <NavDropdown.Item>
+                <NavLink to={ROUTES.HOME}>Todo</NavLink>
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <NavLink to={ROUTES.CART}><CartBadge /></NavLink>

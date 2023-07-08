@@ -7,7 +7,6 @@ import './itemDetail.css';
 
 const ItemDetail = ({ item }) => {
   const [showItemCount, setShowItemCount] = useState(true);
-  const [selectedItemCount, setSelectedItemCount] = useState(0);
   const { addToCart, isInCart } = useContext(CartContext);
 
   const handleAddToCart = (count) => {
@@ -24,9 +23,7 @@ const ItemDetail = ({ item }) => {
     if (!itemInCart){
       addToCart(product)
     }
-    setSelectedItemCount(count);
     setShowItemCount(false);
-    // Aquí puedes agregar la lógica para guardar el valor `count` en tu carrito o realizar cualquier otra acción necesaria
   };
 
   const image = require(`../../assets/images/${item.image}`);
@@ -50,7 +47,7 @@ const ItemDetail = ({ item }) => {
           <h5>${item.price}</h5>
           <br />
           {showItemCount && <ItemCount stock={item.stock} onAddToCart={handleAddToCart} />}
-          {!showItemCount && <EndBtns itemCountValor={selectedItemCount} itemID={item.id} />}
+          {!showItemCount && <EndBtns itemID={item.id} />}
         </Col>
       </Row>
     </div>

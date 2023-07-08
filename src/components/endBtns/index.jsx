@@ -6,22 +6,16 @@ import Button from 'react-bootstrap/Button';
 import { CartContext } from '../cartContext';
 import './endBtns.css';
 
-function EndBtns({ itemCountValor, itemID }) {
+function EndBtns({ itemID }) {
   const { isInCart } = useContext(CartContext);
   const itemInCart = isInCart(itemID);
 
   return (
-    <div>
+    <>
       {itemInCart ? (
-        <p className="endText">Ya agregaste este item al carrito</p>
+        <p className="endText">El item ya se encuentra en al carrito</p>
       ) : (
-        <p className="endText">
-          {itemCountValor == 1 ? (
-            'Se agregó 1 unidad al carrito'
-          ) : (
-            `Se agregaron ${itemCountValor} unidades al carrito`
-          )}
-        </p>
+        <p className="endText">Se agrego el item al carrito</p>
       )}
       <br />
       <Stack gap={2} className="mx-auto">
@@ -36,7 +30,7 @@ function EndBtns({ itemCountValor, itemID }) {
           </Button>
         </Link>
       </Stack>
-    </div>
+    </>
   );
 }
 

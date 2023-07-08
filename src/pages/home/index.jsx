@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.css';
 import Navbar from '../../components/navbar';
 import Hero from '../../components/hero';
 import ItemListContainer from '../../components/itemListContainer';
-import products from '../../assets/data/products.json';
 
 function Home() {
   return (
@@ -15,7 +14,7 @@ function Home() {
         <Hero title="¡Novedades en el escenario galactico!" image="../assets/images/heroBG.jpg" />
         <hr className="divider" />
         <div className="bgContainer">
-          <ItemListContainer filteredProducts={products || []} />
+          <ItemListContainer />
         </div>
       </body>
     </div>
