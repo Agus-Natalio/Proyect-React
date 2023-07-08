@@ -33,7 +33,7 @@
 .btnContainer__total {
     color: rgb(255, 99, 43);
     font-size: 1.15rem; 
-    padding-right: 30rem;
+    padding-right: 20rem;
     margin: 0;
 }
 
@@ -47,6 +47,7 @@
     background-color: rgb(211, 23, 23);
     border-color: rgb(211, 23, 23);
     color: #f1f1f1;
+    margin-bottom: .25rem;
 }
 
 .btnContainer__emptyCart:hover, .btnContainer__emptyCart:active {

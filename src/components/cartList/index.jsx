@@ -44,6 +44,7 @@ function CartList () {
             <div className="btnContainer">
               <p className="btnContainer__total">Total: ${totalPrice}</p>
               <Link to={ROUTES.HOME}><Button className="btnContainer__btn">VOLVER AL CATALOGO</Button></Link>
+              <Link to={ROUTES.CHECKOUT}><Button className="purchase">FINALIZAR COMPRA</Button></Link>
               <Button className="btnContainer__emptyCart" onClick={handleEmptyCart}>VACIAR CARRITO</Button>
             </div>
         </Container>

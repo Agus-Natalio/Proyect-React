@@ -9,13 +9,16 @@ import './endBtns.css';
 function EndBtns({ itemID }) {
   const { isInCart } = useContext(CartContext);
   const itemInCart = isInCart(itemID);
+  console.log(itemID);
+  console.log('itemID: '+itemID);
+  console.log(itemInCart);
 
   return (
     <>
-      {itemInCart ? (
-        <p className="endText">El item ya se encuentra en al carrito</p>
-      ) : (
+      {!itemInCart ? (
         <p className="endText">Se agrego el item al carrito</p>
+        ) : (
+          <p className="endText">El item ya se encuentra en al carrito</p>
       )}
       <br />
       <Stack gap={2} className="mx-auto">

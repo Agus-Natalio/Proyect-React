@@ -4,10 +4,13 @@ import Home from './pages/home/';
 import LandingPage from './pages/landing';
 import Detail from './pages/detail';
 import CartPage from './pages/cart';
+import Checkout from './pages/checkout';
 import { ROUTES } from './constants/routes';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from "./components/cartContext";
 import { initializeApp } from "firebase/app";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 //Inicializacion firebase
@@ -27,12 +30,14 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
+      <ToastContainer />
         <Routes>
           <Route path={ROUTES.LANDING} element={<LandingPage />} />
           <Route path={ROUTES.HOME} element={<Home />} />
           <Route path={ROUTES.CATEGORY} element={<Home />} />
           <Route path={ROUTES.ITEM} element={<Detail />} />
           <Route path={ROUTES.CART} element={<CartPage />} />
+          <Route path={ROUTES.CHECKOUT} element={<Checkout />}/> 
         </Routes>
       </BrowserRouter>
     </CartProvider>

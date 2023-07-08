@@ -1,0 +1,41 @@
+.form {
+    margin: 0 37.5rem;
+    padding: 5rem;
+    height: 88.75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #11053b;
+}
+
+.form-subtitle {
+    color: #f1f1f1;
+}
+
+.form-label {
+    color: rgb(255, 99, 43);
+}
+
+.form-check {
+    color: #f1f1f1;
+}
+
+.form-check-input:checked {
+    background-color: rgb(255, 99, 43);
+    border-color: #f1f1f1;
+}
+
+.form-btn {
+    background-color: rgb(255, 99, 43);
+    border-color: #f1f1f1;
+}
+
+.form-btn:hover {
+    background-color: rgb(194, 64, 16);
+    border-color: #f1f1f1;
+}
+
+.form-btn:active {
+    background-color: rgb(168, 54, 13)!important;
+    border-color: #f1f1f1!important;
+}

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../../assets/images/KaiHammer.png';
 import CartBadge from '../cartBtn/CartWidget';
-import './Navbar.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -9,10 +8,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
 import { ROUTES } from '../../constants/routes';
 import getCategories from '../../firebase/categories';
 import { NavLink } from 'react-router-dom';
+import './Navbar.css';
 
 function NavbarScroll() {
   const [categories, setCategories] = useState([]);
